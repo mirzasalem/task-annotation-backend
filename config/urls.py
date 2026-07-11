@@ -10,5 +10,5 @@ urlpatterns = [
     path("api/annotations/", include("annotations.urls")),
 ]
 
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# Serve uploads in production too (needed on PythonAnywhere if /media/ static map is missing).
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
