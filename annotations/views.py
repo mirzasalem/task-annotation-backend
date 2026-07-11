@@ -39,7 +39,7 @@ class PolygonAnnotationViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=["post"])
     def bulk_save(self, request):
-        """Save all polygons for an image (replace existing)."""
+        """Replace all polygons for one image."""
         image_id = request.data.get("image_id")
         polygons_data = request.data.get("polygons", [])
 

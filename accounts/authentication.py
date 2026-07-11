@@ -1,12 +1,9 @@
-"""Custom auth helpers for SPA + cross-port dev access."""
-
 from django.conf import settings
 from rest_framework.authentication import SessionAuthentication
 
 
 class DevSessionAuthentication(SessionAuthentication):
-    """Skip CSRF enforcement in DEBUG so :3000 → :8000 requests work on LAN."""
-
+    # In DEBUG, skip CSRF so the Next.js app on another port can call the API.
     def enforce_csrf(self, request):
         if settings.DEBUG:
             return

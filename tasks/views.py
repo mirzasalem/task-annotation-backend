@@ -18,7 +18,7 @@ class TaskViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=["post"])
     def reorder(self, request):
-        """Bulk update task status and order after drag-and-drop."""
+        """Update status/order after a drag-and-drop."""
         items = request.data.get("items", [])
         if not isinstance(items, list):
             return Response(
