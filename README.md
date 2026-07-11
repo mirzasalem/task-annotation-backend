@@ -5,7 +5,7 @@ Django API used by the task board and image annotation frontend.
 **Author:** Mirza Salem  
 GitHub: [mirzasalem](https://github.com/mirzasalem) · Email: mirza.salem2016@gmail.com
 
-Frontend repo: `task-annotation-frontend`
+Frontend repo: [task-annotation-frontend](https://github.com/mirzasalem/task-annotation-frontend)
 
 ---
 
@@ -13,9 +13,10 @@ Frontend repo: `task-annotation-frontend`
 
 | | |
 |--|--|
-| API URL | _(add after deploy)_ |
-| Frontend | _(add Vercel URL)_ |
-| Frontend repo | _(add URL)_ |
+| API URL | https://mirzasalem.pythonanywhere.com |
+| Frontend | https://task-annotation-frontend.vercel.app |
+| Login | https://task-annotation-frontend.vercel.app/login |
+| Frontend repo | https://github.com/mirzasalem/task-annotation-frontend |
 
 Demo user (script: `create_demo_user.py`):
 
